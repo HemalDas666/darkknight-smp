@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dark Knight SMP - Premium Minecraft Gaming Server">
+    <title>ᴅᴀʀᴋ ᴋɴɪɢʜᴛ ѕᴍᴘ</title>
+    <link rel="icon" type="image/x-icon" href="KnightLOGO11.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/shared.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="sword">
+                <div class="blade"></div>
+                <div class="hilt"></div>
+            </div>
+            <p>Loading Dark Knight SMP...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo-container">
+            <img src="KnightLOGO9.jpg" alt="DARK KNIGHT SMP logo" class="logo">
+            <span class="logo-text">DARK KNIGHT SMP</span>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <nav class="navigation">
+            <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+            <a href="/KITS/index.html"><i class="fas fa-cube"></i> Kits</a>
+            <a href="/lck/index.html"><i class="fas fa-trophy"></i> LCK</a>
+            <a href="/Ranks/index.html"><i class="fas fa-crown"></i> Ranks</a>
+            <a href="/About Owner/index.html"><i class="fas fa-crosshairs"></i> About OWNER</a>
+            <a href="#join" class="join-btn"><i class="fas fa-gamepad"></i> Join Now</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="main-title">
+                    <span class="title-gradient">Welcome To</span>
+                    <span class="title-outline">DARK KNIGHT SMP</span>
+                </h1>
+                <p class="tagline">Your Ultimate Premium Gaming Experience</p>
+                <div class="server-stats">
+                    <div class="stat">
+                        <i class="fas fa-users"></i>
+                        <span>100+ Players Slots</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-server"></i>
+                        <span>12/4 Uptime</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-bolt"></i>
+                        <span>Zero Lag</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-actions">
+                <button class="btn-primary" onclick="copyIP()">
+                    <i class="fas fa-copy"></i> Copy Server IP
+                </button>
+                <button class="btn-secondary" onclick="showDiscord()">
+                    <i class="fab fa-discord"></i> Join Discord
+                </button>
+                <button class="btn-ghost" onclick="scrollToFeatures()">
+                    <i class="fas fa-arrow-down"></i> Explore Features
+                </button>
+            </div>
+        </div>
+        
+        <div class="floating-elements">
+            <div class="float-item sword"></div>
+            <div class="float-item shield"></div>
+            <div class="float-item potion"></div>
+        </div>
+    </main>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <h2 class="section-title">Server Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Anti-Cheat System</h3>
+                <p>Advanced protection ensuring fair gameplay for all players</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Daily Backups</h3>
+                <p>Your progress is safe with automated daily backups</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Cross-Platform</h3>
+                <p>Play on Java, Bedrock, or any compatible client</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Active Community</h3>
+                <p>Join thousands of friendly players worldwide</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Server IP Modal -->
+    <div class="modal" id="ipModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2><i class="fas fa-server"></i> Server Connection</h2>
+            <div class="ip-container">
+                <code class="server-ip" id="serverIP">darkknightsmp.qzz.io</code>
+                <button class="copy-btn" onclick="copyIP()">
+                    <i class="fas fa-copy"></i> Copy
+                </button>
+            </div>
+            <div class="port-info">
+                <p><strong>Port:</strong> 32435 (Default)</p>
+                <p><strong>Version:</strong> 1.8 - 1.21.x</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification System -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <!-- Center Notification Modal -->
+    <div class="center-notification" id="centerNotification">
+        <button class="toast-close" onclick="hideCenterNotification()">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="notification-icon">
+            <i class="fas fa-gamepad"></i>
+        </div>
+        <h3 id="centerNotificationTitle">Notification</h3>
+        <p id="centerNotificationMessage">Message goes here</p>
+        <button class="btn-primary" onclick="hideCenterNotification()">
+            <i class="fas fa-check"></i> Got It!
+        </button>
+    </div>
+
+    <!-- Particles Container -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="assets/js/shared.js"></script>
+</body>
+</html>
