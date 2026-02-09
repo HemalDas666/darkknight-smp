@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ᴅᴀʀᴋ ᴋɴɪɢʜᴛ ѕᴍᴘ | About Me</title>
+    <link rel="icon" type="image/x-icon" href="KnightLOGO11.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="profile-loader">
+                <div class="loader-circle"></div>
+                <div class="loader-picture">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <p>Loading Profile...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo-container">
+            <img src="KnightLOGO9.jpg" alt="DARK KNIGHT SMP logo" class="logo">
+            <span class="logo-text">DARK KNIGHT SMP</span>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <nav class="navigation">
+            <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="../KITS/index.html"><i class="fas fa-cube"></i> Kits</a>
+            <a href="../lck/lck-key.html"><i class="fas fa-key"></i> LCK</a>
+            <a href="../RANKS/index.html"><i class="fas fa-crown"></i> Ranks</a>
+            <a href="index.html" class="active"><i class="fas fa-user"></i> About Me</a>
+            <a href="#" class="join-btn"><i class="fas fa-gamepad"></i> Join Server</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="hero-content">
+            <div class="main-title">
+                <span class="title-gradient">BEHIND THE SERVER</span>
+                <span class="title-outline">CREATOR'S PROFILE</span>
+            </div>
+            
+            <p class="tagline">
+                Meet the mind behind Dark Knight SMP. Passionate developer, Minecraft enthusiast,<br>
+                and creator of epic gaming experiences.
+            </p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <i class="fas fa-code"></i>
+                    <div>
+                        <h3>5+ Years</h3>
+                        <p>Development Experience</p>
+                    </div>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-server"></i>
+                    <div>
+                        <h3>2+ Years</h3>
+                        <p>Server Management</p>
+                    </div>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <h3>1000+</h3>
+                        <p>Community Members</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-actions">
+                <button class="btn-primary" onclick="scrollToProfile()">
+                    <i class="fas fa-arrow-down"></i> View Profile
+                </button>
+                <button class="btn-secondary" onclick="flipCard()">
+                    <i class="fas fa-sync-alt"></i> Flip Card
+                </button>
+                <button class="btn-ghost" onclick="showContactModal()">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </button>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="float-item code"><i class="fas fa-code"></i></div>
+            <div class="float-item gamepad"><i class="fas fa-gamepad"></i></div>
+            <div class="float-item heart"><i class="fas fa-heart"></i></div>
+            <div class="float-item rocket"><i class="fas fa-rocket"></i></div>
+            <div class="float-item star"><i class="fas fa-star"></i></div>
+        </div>
+    </section>
+
+    <!-- Profile Card Section -->
+    <section class="profile-section" id="profile">
+        <div class="section-container">
+            <div class="section-header">
+                <h2><i class="fas fa-id-card"></i> PERSONAL PROFILE</h2>
+                <p>Hover or click the card to flip and see different sides</p>
+            </div>
+            
+            <div class="profile-card-wrapper">
+                <div class="profile-card" id="profileCard">
+                    <!-- Front Side -->
+                    <div class="card-side card-front">
+                        <div class="card-glow"></div>
+                        
+                        <div class="card-header">
+                            <div class="title-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h3>CREATOR PROFILE</h3>
+                            <div class="card-subtitle">Dark Knight SMP Founder</div>
+                        </div>
+                        
+                        <div class="card-content">
+                            <div class="intro-text">
+                                <h4>HELLO, I'M</h4>
+                                <h2 class="profile-name">Devasis Pal</h2>
+                                <div class="title-role">
+                                    <span class="role-badge">SERVER OWNER</span>
+                                    <span class="role-badge">DEVELOPER</span>
+                                    <span class="role-badge">DESIGNER</span>
+                                </div>
+                                
+                                <p class="profile-description">
+                                    Passionate Minecraft server developer with over 5 years of experience in creating immersive gaming experiences. 
+                                    I specialize in custom plugins, server optimization, and community building.
+                                </p>
+                                
+                                <p class="profile-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                    Creating epic adventures, one block at a time.
+                                    <i class="fas fa-quote-right"></i>
+                                </p>
+                            </div>
+                            
+                            <div class="skills-showcase">
+                                <h4><i class="fas fa-tools"></i> KEY SKILLS</h4>
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <h5>Java Development</h5>
+                                            <div class="skill-bar">
+                                                <div class="skill-level" style="width: 95%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-server"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <h5>Server Management</h5>
+                                            <div class="skill-bar">
+                                                <div class="skill-level" style="width: 90%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <h5>Community Building</h5>
+                                            <div class="skill-bar">
+                                                <div class="skill-level" style="width: 88%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-paint-brush"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <h5>UI/UX Design</h5>
+                                            <div class="skill-bar">
+                                                <div class="skill-level" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flip-hint">
+                                <i class="fas fa-hand-point-up"></i>
+                                <span>Hover or click to see personal details</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Back Side -->
+                    <div class="card-side card-back">
+                        <div class="card-glow"></div>
+                        
+                        <div class="personal-profile">
+                            <div class="profile-picture">
+                                <div class="picture-frame">
+                                    <div class="picture-glow"></div>
+                                    <img src="profile-picture.jpg" alt="Devasis Pal" class="profile-img" id="profileImg" onerror="this.src='https://via.placeholder.com/180x180/00e1ff/050510?text=DP'">
+                                    <div class="picture-status">
+                                        <i class="fas fa-circle"></i>
+                                        <span>Online</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="personal-info">
+                                <h2 class="personal-name">Devasis Pal</h2>
+                                <div class="personal-title">Founder Of Dark Knight SMP</div>
+                                
+                                <div class="personal-bio">
+                                    <p><i class="fas fa-map-marker-alt"></i> Location: Kolkata, India</p>
+                                    <p><i class="fas fa-birthday-cake"></i> Age: 16</p>
+                                    <p><i class="fas fa-graduation-cap"></i> Education: 11TH CLASS</p>
+                                    <p><i class="fas fa-briefcase"></i> Profession: Web Developer</p>
+                                </div>
+                                
+                                <div class="personal-tags">
+                                    <span class="tag">Minecraft Expert</span>
+                                    <span class="tag">Java Developer</span>
+                                    <span class="tag">Community Leader</span>
+                                    <span class="tag">Problem Solver</span>
+                                </div>
+                            </div>
+                            
+                            <div class="social-section">
+                                <h4><i class="fas fa-share-alt"></i> CONNECT WITH ME</h4>
+                                
+                                <div class="social-links">
+                                    <!-- LinkedIn -->
+                                    <a href="https://linkedin.com/in/yourprofile" class="social-link linkedin" target="_blank">
+                                        <div class="social-icon">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </div>
+                                        <div class="social-info">
+                                            <span class="social-name">LinkedIn</span>
+                                            <span class="social-handle">/devasispal</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <!-- GitHub -->
+                                    <a href="https://github.com/yourusername" class="social-link github" target="_blank">
+                                        <div class="social-icon">
+                                            <i class="fab fa-github"></i>
+                                        </div>
+                                        <div class="social-info">
+                                            <span class="social-name">GitHub</span>
+                                            <span class="social-handle">@devasispal</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <!-- Twitter -->
+                                    <a href="https://twitter.com/yourhandle" class="social-link twitter" target="_blank">
+                                        <div class="social-icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </div>
+                                        <div class="social-info">
+                                            <span class="social-name">Twitter</span>
+                                            <span class="social-handle">@devasispal</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <!-- Discord -->
+                                    <a href="https://discord.gg/yourinvite" class="social-link discord" target="_blank">
+                                        <div class="social-icon">
+                                            <i class="fab fa-discord"></i>
+                                        </div>
+                                        <div class="social-info">
+                                            <span class="social-name">Discord</span>
+                                            <span class="social-handle">DarkKnightSMP</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <!-- Email -->
+                                    <a href="mailto:dashemal08@example.com" class="social-link email">
+                                        <div class="social-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="social-info">
+                                            <span class="social-name">Email</span>
+                                            <span class="social-handle">dashemal08</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="social-stats">
+                                    <div class="social-stat">
+                                        <div class="stat-number">500+</div>
+                                        <div class="stat-label">Connections</div>
+                                    </div>
+                                    <div class="social-stat">
+                                        <div class="stat-number">50+</div>
+                                        <div class="stat-label">Projects</div>
+                                    </div>
+                                    <div class="social-stat">
+                                        <div class="stat-number">24/7</div>
+                                        <div class="stat-label">Available</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flip-hint">
+                                <i class="fas fa-undo"></i>
+                                <span>Click to flip back</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-controls">
+                    <button class="card-btn active" onclick="showSide('front')">
+                        <i class="fas fa-user"></i> Professional
+                    </button>
+                    <button class="card-btn" onclick="showSide('back')">
+                        <i class="fas fa-address-card"></i> Personal
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2><i class="fas fa-history"></i> JOURNEY & EXPERIENCE</h2>
+                <p>My path to creating Dark Knight SMP</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2018</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>First Minecraft Server</h3>
+                        <p>Started my first Minecraft server for friends, learning the basics of server management and plugins.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2019</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Java Development</h3>
+                        <p>Began learning Java to create custom plugins and enhance server functionality.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Community Building</h3>
+                        <p>Started building a community around my servers, learning about player engagement and retention.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Dark Knight SMP Concept</h3>
+                        <p>Conceived the idea for Dark Knight SMP - a premium Minecraft experience with unique features.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Server Launch</h3>
+                        <p>Officially launched Dark Knight SMP, growing to 100+ active players within the first month.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2023-Present</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Continuous Growth</h3>
+                        <p>Expanding server features, building a dedicated team, and creating unforgettable gaming experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2><i class="fas fa-heart"></i> CORE VALUES</h2>
+                <p>The principles that guide my work</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community First</h3>
+                    <p>Always prioritizing player experience and community feedback in every decision.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Constantly exploring new ideas and technologies to enhance the gaming experience.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Quality</h3>
+                    <p>Committed to delivering high-quality content, stable performance, and excellent support.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Transparency</h3>
+                    <p>Open communication about development plans, changes, and server status.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="section-container">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-comments"></i>
+                    <div class="contact-glow"></div>
+                </div>
+                
+                <div class="contact-content">
+                    <h2>LET'S CONNECT</h2>
+                    <p>Have questions, suggestions, or want to collaborate? I'd love to hear from you!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="method">
+                            <i class="fab fa-discord"></i>
+                            <div>
+                                <h4>Discord Server</h4>
+                                <p>Join our community for real-time chat</p>
+                            </div>
+                        </div>
+                        
+                        <div class="method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>dashemal08@example.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="method">
+                            <i class="fas fa-comment-dots"></i>
+                            <div>
+                                <h4>Server Chat</h4>
+                                <p>Message me in-game: /msg Devasis</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-actions">
+                        <button class="btn-primary" onclick="showContactModal()">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <button class="btn-secondary" onclick="joinDiscord()">
+                            <i class="fab fa-discord"></i> Join Discord
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="contact-modal" id="contactModal">
+        <div class="contact-modal-content">
+            <button class="close-contact-modal">&times;</button>
+            
+            <div class="contact-modal-header">
+                <div class="contact-modal-icon">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+                <h2>GET IN TOUCH</h2>
+                <p>Send me a message directly</p>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i> Your Name</label>
+                    <input type="text" id="contactName" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label><i class="fas fa-envelope"></i> Your Email</label>
+                    <input type="email" id="contactEmail" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label><i class="fas fa-tag"></i> Subject</label>
+                    <select id="contactSubject" required>
+                        <option value="">Select a subject</option>
+                        <option value="server">Server Support</option>
+                        <option value="collab">Collaboration</option>
+                        <option value="suggestion">Feature Suggestion</option>
+                        <option value="other">Other Inquiry</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label><i class="fas fa-comment"></i> Message</label>
+                    <textarea id="contactMessage" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+                
+                <div class="form-terms">
+                    <label class="terms-checkbox">
+                        <input type="checkbox" id="contactTerms" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#" class="terms-link">Privacy Policy</a>
+                    </label>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" id="cancelContact">
+                        <i class="fas fa-times"></i> Cancel
+                    </button>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="success-modal" id="successModal">
+        <div class="success-modal-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+                <div class="success-glow"></div>
+            </div>
+            
+            <h2>MESSAGE SENT! 🎉</h2>
+            <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+            
+            <div class="success-details">
+                <p><i class="fas fa-clock"></i> Response Time: Usually within 24 hours</p>
+                <p><i class="fas fa-envelope"></i> Check your email for confirmation</p>
+            </div>
+            
+            <button class="btn-primary" onclick="closeSuccessModal()">
+                <i class="fas fa-check"></i> Done
+            </button>
+        </div>
+    </div>
+
+    <!-- Notification System -->
+    <div class="notification-container" id="notificationContainer"></div>
+    
+    <!-- Particles Container -->
+    <div class="particles-container" id="particles"></div>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Simple Test Script -->
+    <script>
+        // Simple test script to ensure flip works
+        console.log("Simple test script loaded");
+        
+        // Make functions globally available
+        window.flipCard = function() {
+            console.log("Flipping card...");
+            const card = document.getElementById('profileCard');
+            if (card) {
+                card.classList.toggle('flipped');
+                updateCardButtons();
+                console.log("Card flipped:", card.classList.contains('flipped') ? "Back" : "Front");
+            }
+        };
+        
+        window.showSide = function(side) {
+            console.log("Showing side:", side);
+            const card = document.getElementById('profileCard');
+            if (card) {
+                if (side === 'front') {
+                    card.classList.remove('flipped');
+                } else {
+                    card.classList.add('flipped');
+                }
+                updateCardButtons();
+            }
+        };
+        
+        function updateCardButtons() {
+            const card = document.getElementById('profileCard');
+            const professionalBtn = document.querySelector('.card-btn:nth-child(1)');
+            const personalBtn = document.querySelector('.card-btn:nth-child(2)');
+            
+            if (card && professionalBtn && personalBtn) {
+                const isFlipped = card.classList.contains('flipped');
+                professionalBtn.classList.toggle('active', !isFlipped);
+                personalBtn.classList.toggle('active', isFlipped);
+            }
+        }
+        
+        window.scrollToProfile = function() {
+            const profileSection = document.getElementById('profile');
+            if (profileSection) {
+                profileSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        };
+        
+        window.showContactModal = function() {
+            const modal = document.getElementById('contactModal');
+            if (modal) {
+                modal.classList.add('active');
+            }
+        };
+        
+        window.closeSuccessModal = function() {
+            const modal = document.getElementById('successModal');
+            if (modal) {
+                modal.classList.remove('active');
+            }
+        };
+        
+        window.joinDiscord = function() {
+            alert("Redirecting to Discord... (Update the link in script.js)");
+        };
+        
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("DOM fully loaded");
+            
+            // Hide loading screen
+            setTimeout(() => {
+                const loadingScreen = document.querySelector('.loading-screen');
+                if (loadingScreen) {
+                    loadingScreen.classList.add('fade-out');
+                    setTimeout(() => {
+                        loadingScreen.style.display = 'none';
+                    }, 500);
+                }
+            }, 1500);
+            
+            // Setup card click
+            const card = document.getElementById('profileCard');
+            if (card) {
+                card.addEventListener('click', function(e) {
+                    if (!e.target.closest('.card-btn') && 
+                        !e.target.closest('.social-link') && 
+                        !e.target.closest('.flip-hint')) {
+                        flipCard();
+                    }
+                });
+            }
+            
+            // Setup contact form
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const name = document.getElementById('contactName')?.value;
+                    const email = document.getElementById('contactEmail')?.value;
+                    const subject = document.getElementById('contactSubject')?.value;
+                    const message = document.getElementById('contactMessage')?.value;
+                    
+                    // Validate
+                    if (!name || !email || !subject || !message) {
+                        alert("Please fill in all fields");
+                        return;
+                    }
+                    
+                    // Simulate sending
+                    alert("Message sent! (This is a demo)");
+                    contactForm.reset();
+                    document.getElementById('contactModal').classList.remove('active');
+                    document.getElementById('successModal').classList.add('active');
+                });
+            }
+            
+            // Setup modal close buttons
+            document.querySelectorAll('.close-contact-modal, #cancelContact').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.getElementById('contactModal').classList.remove('active');
+                });
+            });
+            
+            // Setup scroll effects
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                const backToTopBtn = document.querySelector('.back-to-top');
+                
+                if (header && window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else if (header) {
+                    header.classList.remove('scrolled');
+                }
+                
+                if (backToTopBtn && window.scrollY > 500) {
+                    backToTopBtn.classList.add('visible');
+                } else if (backToTopBtn) {
+                    backToTopBtn.classList.remove('visible');
+                }
+            });
+            
+            // Back to top button
+            const backToTopBtn = document.querySelector('.back-to-top');
+            if (backToTopBtn) {
+                backToTopBtn.addEventListener('click', function() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+            
+            // Menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navigation = document.querySelector('.navigation');
+            
+            if (menuToggle && navigation) {
+                menuToggle.addEventListener('click', function() {
+                    navigation.classList.toggle('active');
+                    menuToggle.innerHTML = navigation.classList.contains('active') 
+                        ? '<i class="fas fa-times"></i>' 
+                        : '<i class="fas fa-bars"></i>';
+                });
+            }
+        });
+    </script>
+    
+    <script src="script.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
