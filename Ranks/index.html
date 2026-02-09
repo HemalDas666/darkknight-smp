@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ᴅᴀʀᴋ ᴋɴɪɢʜᴛ ѕᴍᴘ | Premium Ranks</title>
+    <link rel="icon" type="image/x-icon" href="KnightLOGO11.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="rank-crown">
+                <div class="crown-base"></div>
+                <div class="crown-spike"></div>
+                <div class="crown-spike"></div>
+                <div class="crown-spike"></div>
+                <div class="crown-gem"></div>
+            </div>
+            <p>Loading Royal Ranks...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo-container">
+            <img src="KnightLOGO9.jpg" alt="DARK KNIGHT SMP logo" class="logo">
+            <span class="logo-text">DARK KNIGHT SMP</span>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <nav class="navigation">
+            <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="../KITS/index.html"><i class="fas fa-cube"></i> Kits</a>
+            <a href="../lck/lck-key.html"><i class="fas fa-key"></i> LCK</a>
+            <a href="" class="active"><i class="fas fa-crown"></i> Ranks</a>
+            <a href="/About Owner/index.html"><i class="fas fa-crosshairs"></i> About OWNER</a>
+            <a href="#" class="join-btn"><i class="fas fa-gamepad"></i> Join Now</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="ranks-hero">
+        <div class="hero-content">
+            <div class="main-title">
+                <span class="title-gradient">PREMIUM RANKS</span>
+                <span class="title-outline">ASCEND TO POWER</span>
+            </div>
+            
+            <p class="tagline">
+                Unlock exclusive perks, commands, and privileges with our premium ranks.<br>
+                Each rank offers unique benefits to enhance your gameplay experience.
+            </p>
+            
+            <div class="server-stats">
+                <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <h3>10+</h3>
+                        <p>Rank Holders</p>
+                    </div>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-medal"></i>
+                    <div>
+                        <h3>6 Ranks</h3>
+                        <p>To Choose From</p>
+                    </div>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <h3>24/7</h3>
+                        <p>Support</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-actions">
+                <button class="btn-primary" onclick="scrollToRanks()">
+                    <i class="fas fa-arrow-down"></i> View All Ranks
+                </button>
+                <button class="btn-secondary" id="discordBtn">
+                    <i class="fab fa-discord"></i> Join Discord
+                </button>
+                <button class="btn-ghost" onclick="showRankGuide()">
+                    <i class="fas fa-book"></i> Rank Guide
+                </button>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="float-item crown"><i class="fas fa-crown"></i></div>
+            <div class="float-item medal"><i class="fas fa-medal"></i></div>
+            <div class="float-item star"><i class="fas fa-star"></i></div>
+            <div class="float-item shield"><i class="fas fa-shield-alt"></i></div>
+            <div class="float-item gem"><i class="fas fa-gem"></i></div>
+        </div>
+    </section>
+
+    <!-- Ranks Grid Section -->
+    <section class="ranks-section" id="ranks">
+        <div class="section-container">
+            <div class="section-header">
+                <h2><i class="fas fa-layer-group"></i> PREMIUM RANKS COLLECTION</h2>
+                <p>Choose the perfect rank for your playstyle. All ranks are one-time purchases.</p>
+            </div>
+            
+            <div class="ranks-grid">
+                <!-- Rank 1: Knight -->
+                <div class="rank-card" data-rank="knight">
+                    <div class="rank-badge">
+                        <div class="rank-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="rank-level">MAX TIER</div>
+                    </div>
+                    
+                    <div class="rank-info">
+                        <h3 class="rank-name">KNIGHT</h3>
+                        <div class="rank-price">
+                            <span class="price">$9.99</span>
+                            <span class="duration">Lifetime</span>
+                        </div>
+                        <p class="rank-description">
+                            The perfect starter rank for dedicated players seeking basic privileges.
+                        </p>
+                    </div>
+                    
+                    <div class="rank-perks">
+                        <h4><i class="fas fa-check-circle"></i> INCLUDED PERKS</h4>
+                        <ul class="perks-list">
+                            <li><i class="fas fa-check"></i> /fly command in survival</li>
+                            <li><i class="fas fa-check"></i> Unlimited homes instead of 1</li>
+                            <li><i class="fas fa-check"></i> Access to /hat command</li>
+                            <li><i class="fas fa-check"></i> Knight rank prefix</li>
+                            <li><i class="fas fa-check"></i> 10,00,000 coins bonus</li>
+                            <li><i class="fas fa-check"></i> Priority queue access</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rank-actions">
+                        <button class="rank-select-btn" onclick="selectRank('knight')">
+                            <i class="fas fa-check"></i> Select Knight
+                        </button>
+                        <button class="rank-info-btn" onclick="showRankDetails('knight')">
+                            <i class="fas fa-info-circle"></i> More Info
+                        </button>
+                    </div>
+                    
+                    <div class="rank-tag">BEST VALUE</div>
+                </div>
+
+                <!-- Rank 2: Lord -->
+                <div class="rank-card" data-rank="lord">
+                    <div class="rank-badge">
+                        <div class="rank-icon">
+                            <i class="fas fa-chess-queen"></i>
+                        </div>
+                        <div class="rank-level">TIER 2</div>
+                    </div>
+                    
+                    <div class="rank-info">
+                        <h3 class="rank-name">LORD</h3>
+                        <div class="rank-price">
+                            <span class="price">$8.99</span>
+                            <span class="duration">Lifetime</span>
+                        </div>
+                        <p class="rank-description">
+                            Enhanced privileges for players who want more control and features.
+                        </p>
+                    </div>
+                    
+                    <div class="rank-perks">
+                        <h4><i class="fas fa-check-circle"></i> INCLUDED PERKS</h4>
+                        <ul class="perks-list">
+                            <li><i class="fas fa-check"></i> All Knight perks</li>
+                            <li><i class="fas fa-check"></i> /back command (death)</li>
+                            <li><i class="fas fa-check"></i> 10 homes instead of 3</li>
+                            <li><i class="fas fa-check"></i> Access to /feed command</li>
+                            <li><i class="fas fa-check"></i> Lord rank prefix</li>
+                            <li><i class="fas fa-check"></i> 25,000 coins bonus</li>
+                            <li><i class="fas fa-check"></i> Custom particle effects</li>
+                            <li><i class="fas fa-check"></i> Colorful chat</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rank-actions">
+                        <button class="rank-select-btn" onclick="selectRank('lord')">
+                            <i class="fas fa-check"></i> Select Lord
+                        </button>
+                        <button class="rank-info-btn" onclick="showRankDetails('lord')">
+                            <i class="fas fa-info-circle"></i> More Info
+                        </button>
+                    </div>
+                    
+                    <div class="rank-tag">POPULAR</div>
+                </div>
+
+                <!-- Rank 3: Baron -->
+                <div class="rank-card" data-rank="baron">
+                    <div class="rank-badge">
+                        <div class="rank-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <div class="rank-level">TIER 3</div>
+                    </div>
+                    
+                    <div class="rank-info">
+                        <h3 class="rank-name">BARON</h3>
+                        <div class="rank-price">
+                            <span class="price">$7.99</span>
+                            <span class="duration">Lifetime</span>
+                        </div>
+                        <p class="rank-description">
+                            For serious players who want maximum benefits and recognition.
+                        </p>
+                    </div>
+                    
+                    <div class="rank-perks">
+                        <h4><i class="fas fa-check-circle"></i> INCLUDED PERKS</h4>
+                        <ul class="perks-list">
+                            <li><i class="fas fa-check"></i> All Lord perks</li>
+                            <li><i class="fas fa-check"></i> /workbench command</li>
+                            <li><i class="fas fa-check"></i> 20 homes instead of 5</li>
+                            <li><i class="fas fa-check"></i> Access to /enderchest</li>
+                            <li><i class="fas fa-check"></i> Baron rank prefix</li>
+                            <li><i class="fas fa-check"></i> 50,000 coins bonus</li>
+                            <li><i class="fas fa-check"></i> Custom join message</li>
+                            <li><i class="fas fa-check"></i> Nickname colors</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rank-actions">
+                        <button class="rank-select-btn" onclick="selectRank('baron')">
+                            <i class="fas fa-check"></i> Select Baron
+                        </button>
+                        <button class="rank-info-btn" onclick="showRankDetails('baron')">
+                            <i class="fas fa-info-circle"></i> More Info
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Rank 4: Duke -->
+                <div class="rank-card" data-rank="duke">
+                    <div class="rank-badge">
+                        <div class="rank-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                                               <div class="rank-level">TIER 4</div>
+                    </div>
+                    
+                    <div class="rank-info">
+                        <h3 class="rank-name">DUKE</h3>
+                        <div class="rank-price">
+                            <span class="price">$6.99</span>
+                            <span class="duration">Lifetime</span>
+                        </div>
+                        <p class="rank-description">
+                            Royal status with exceptional privileges for server influencers.
+                        </p>
+                    </div>
+                    
+                    <div class="rank-perks">
+                        <h4><i class="fas fa-check-circle"></i> INCLUDED PERKS</h4>
+                        <ul class="perks-list">
+                            <li><i class="fas fa-check"></i> All Baron perks</li>
+                            <li><i class="fas fa-check"></i> /craft command anywhere</li>
+                            <li><i class="fas fa-check"></i> 30 homes instead of 8</li>
+                            <li><i class="fas fa-check"></i> Access to /repair command</li>
+                            <li><i class="fas fa-check"></i> Duke rank prefix</li>
+                            <li><i class="fas fa-check"></i> 100,000 coins bonus</li>
+                            <li><i class="fas fa-check"></i> Custom prefix color</li>
+                            <li><i class="fas fa-check"></i> Exclusive particle trail</li>
+                            <li><i class="fas fa-check"></i> /tpahere command</li>
+                            <li><i class="fas fa-check"></i> Vote multiplier x2</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rank-actions">
+                        <button class="rank-select-btn" onclick="selectRank('duke')">
+                            <i class="fas fa-check"></i> Select Duke
+                        </button>
+                        <button class="rank-info-btn" onclick="showRankDetails('duke')">
+                            <i class="fas fa-info-circle"></i> More Info
+                        </button>
+                    </div>
+                    
+                    <div class="rank-tag">ROYAL</div>
+                </div>
+
+                <!-- Rank 5: Prince -->
+                <div class="rank-card" data-rank="prince">
+                    <div class="rank-badge">
+                        <div class="rank-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="rank-level">TIER 5</div>
+                    </div>
+                    
+                    <div class="rank-info">
+                        <h3 class="rank-name">PRINCE</h3>
+                        <div class="rank-price">
+                            <span class="price">$5.99</span>
+                            <span class="duration">Lifetime</span>
+                        </div>
+                        <p class="rank-description">
+                            Near-ultimate power with almost all commands and maximum recognition.
+                        </p>
+                    </div>
+                    
+                    <div class="rank-perks">
+                        <h4><i class="fas fa-check-circle"></i> INCLUDED PERKS</h4>
+                        <ul class="perks-list">
+                            <li><i class="fas fa-check"></i> All Duke perks</li>
+                            <li><i class="fas fa-check"></i> /god command (short duration)</li>
+                            <li><i class="fas fa-check"></i> 40 homes instead of 12</li>
+                            <li><i class="fas fa-check"></i> Access to /fix all command</li>
+                            <li><i class="fas fa-check"></i> Prince rank prefix</li>
+                            <li><i class="fas fa-check"></i> 250,000 coins bonus</li>
+                            <li><i class="fas fa-check"></i> Custom join sound</li>
+                            <li><i class="fas fa-check"></i> Exclusive pet (cosmetic)</li>
+                            <li><i class="fas fa-check"></i> /nick with colors & format</li>
+                            <li><i class="fas fa-check"></i> Vote multiplier x3</li>
+                            <li><i class="fas fa-check"></i> Special Discord role</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rank-actions">
+                        <button class="rank-select-btn" onclick="selectRank('prince')">
+                            <i class="fas fa-check"></i> Select Prince
+                        </button>
+                        <button class="rank-info-btn" onclick="showRankDetails('prince')">
+                            <i class="fas fa-info-circle"></i> More Info
+                        </button>
+                    </div>
+                    
+                    <div class="rank-tag">EXCLUSIVE</div>
+                </div>
+
+                <!-- Rank 6: King -->
+                <div class="rank-card featured" data-rank="king">
+                    <div class="rank-badge">
+                        <div class="rank-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="rank-level">BIG TIER</div>
+                    </div>
+                    
+                    <div class="rank-info">
+                        <h3 class="rank-name">KING</h3>
+                        <div class="rank-price">
+                            <span class="price">$8.99</span>
+                            <span class="duration">Lifetime</span>
+                        </div>
+                        <p class="rank-description">
+                            The ultimate rank with ALL privileges, commands, and maximum server recognition.
+                        </p>
+                    </div>
+                    
+                    <div class="rank-perks">
+                        <h4><i class="fas fa-check-circle"></i> INCLUDED PERKS</h4>
+                        <ul class="perks-list">
+                            <li><i class="fas fa-check"></i> All Prince perks</li>
+                            <li><i class="fas fa-check"></i> /god command (permanent)</li>
+                            <li><i class="fas fa-check"></i> Unlimited homes</li>
+                            <li><i class="fas fa-check"></i> Access to all commands</li>
+                            <li><i class="fas fa-check"></i> King rank prefix (animated)</li>
+                            <li><i class="fas fa-check"></i> 500,000 coins bonus</li>
+                            <li><i class="fas fa-check"></i> Custom animated particles</li>
+                            <li><i class="fas fa-check"></i> Exclusive King's throne</li>
+                            <li><i class="fas fa-check"></i> /nick with special characters</li>
+                            <li><i class="fas fa-check"></i> Vote multiplier x5</li>
+                            <li><i class="fas fa-check"></i> King role in Discord</li>
+                            <li><i class="fas fa-check"></i> Staff-like permissions</li>
+                            <li><i class="fas fa-check"></i> Event host privileges</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rank-actions">
+                        <button class="rank-select-btn" onclick="selectRank('king')">
+                            <i class="fas fa-crown"></i> Become King
+                        </button>
+                        <button class="rank-info-btn" onclick="showRankDetails('king')">
+                            <i class="fas fa-info-circle"></i> All Features
+                        </button>
+                    </div>
+                    
+                    <div class="rank-tag">ULTIMATE</div>
+                    <div class="featured-badge">BEST SELLER</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2><i class="fas fa-balance-scale"></i> RANK COMPARISON</h2>
+                <p>Compare all features side by side to choose your perfect rank</p>
+            </div>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>FEATURES</th>
+                            <th>KNIGHT</th>
+                            <th>LORD</th>
+                            <th>BARON</th>
+                            <th>DUKE</th>
+                            <th>PRINCE</th>
+                            <th>KING</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-home"></i> Homes</td>
+                            <td>Unlimited</td>
+                            <td>20</td>
+                            <td>30</td>
+                            <td>40</td>
+                            <td>60</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-coins"></i> Coin Bonus</td>
+                            <td>1M</td>
+                            <td>25k</td>
+                            <td>50k</td>
+                            <td>100k</td>
+                            <td>250k</td>
+                            <td>500k</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-jet-fighter"></i> /fly Command</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-utensils"></i> /feed Command</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-hammer"></i> /repair Command</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-shield-alt"></i> /god Command</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td>30s</td>
+                            <td>Permanent</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-palette"></i> Custom Particles</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td>Basic</td>
+                            <td>Advanced</td>
+                            <td>Premium</td>
+                            <td>Exclusive</td>
+                            <td>Animated</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fab fa-discord"></i> Discord Role</td>
+                            <td>Knight</td>
+                            <td>Lord</td>
+                            <td>Baron</td>
+                            <td>Duke</td>
+                            <td>Prince</td>
+                            <td>King</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-vote-yea"></i> Vote Multiplier</td>
+                            <td>x1</td>
+                            <td>x1</td>
+                            <td>x1</td>
+                            <td>x2</td>
+                            <td>x3</td>
+                            <td>x5</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-headset"></i> Support Priority</td>
+                            <td>Normal</td>
+                            <td>Normal</td>
+                            <td>High</td>
+                            <td>High</td>
+                            <td>VIP</td>
+                            <td>Royal</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord CTA Section -->
+    <section class="discord-section">
+        <div class="section-container">
+            <div class="discord-card">
+                <div class="discord-icon">
+                    <i class="fab fa-discord"></i>
+                    <div class="discord-glow"></div>
+                </div>
+                
+                <div class="discord-content">
+                    <h2>JOIN OUR DISCORD COMMUNITY</h2>
+                    <p>Connect with 500+ players, get support, participate in events, and receive rank updates!</p>
+                    
+                    <div class="discord-features">
+                        <div class="feature">
+                            <i class="fas fa-comments"></i>
+                            <span>Active Community Chat</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-calendar-star"></i>
+                            <span>Exclusive Events</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bullhorn"></i>
+                            <span>Announcements</span>
+                        </div>
+                    </div>
+                    
+                    <button class="discord-btn" id="mainDiscordBtn">
+                        <i class="fab fa-discord"></i>
+                        JOIN DISCORD NOW
+                        <div class="btn-pulse"></div>
+                    </button>
+                    
+                    <p class="discord-note">Clicking will redirect you to our official Discord server</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2><i class="fas fa-question-circle"></i> FREQUENTLY ASKED QUESTIONS</h2>
+                <p>Everything you need to know about purchasing ranks</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>How do I get my rank after purchase?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Your rank is automatically applied to your Minecraft account within 1-5 minutes after purchase. Just rejoin the server!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>Are ranks permanent or monthly?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All ranks are ONE-TIME purchases and are permanent. You never have to pay again!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>Can I upgrade my rank later?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can upgrade to a higher rank at any time. Contact staff for upgrade pricing.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>Do ranks work on all servers?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ranks are specific to Dark Knight SMP only. They don't transfer to other servers.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>What payment methods do you accept?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept PayPal, Credit Cards, Cryptocurrency, and various regional payment methods.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>Can I get a refund?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Due to the digital nature of ranks, we don't offer refunds. Please purchase carefully.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purchase Modal -->
+    <div class="purchase-modal" id="purchaseModal">
+        <div class="purchase-modal-content">
+            <button class="close-purchase-modal">&times;</button>
+            
+            <div class="purchase-header">
+                <div class="purchase-rank-icon" id="modalRankIcon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <h2 id="modalRankName">Purchase Rank</h2>
+                <div class="purchase-price" id="modalRankPrice">$0.00</div>
+            </div>
+            
+            <div class="purchase-details">
+                <div class="purchase-info">
+                    <h3><i class="fas fa-info-circle"></i> Purchase Information</h3>
+                    <p>You are purchasing the <span id="modalRankNameText" class="highlight">Rank Name</span>.</p>
+                    
+                    <div class="purchase-benefits">
+                        <h4><i class="fas fa-gift"></i> You Will Receive:</h4>
+                        <ul id="modalRankBenefits">
+                            <li>All perks listed for this rank</li>
+                            <li>Instant rank activation</li>
+                            <li>Special Discord role</li>
+                            <li>Lifetime access</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="payment-methods">
+                    <h3><i class="fas fa-credit-card"></i> Payment Methods</h3>
+                    <div class="payment-options">
+                        <button class="payment-option active" data-method="paypal">
+                            <i class="fab fa-paypal"></i> PayPal
+                        </button>
+                        <button class="payment-option" data-method="stripe">
+                            <i class="fas fa-credit-card"></i> Credit Card
+                        </button>
+                        <button class="payment-option" data-method="crypto">
+                            <i class="fab fa-bitcoin"></i> Crypto
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="purchase-terms">
+                    <label class="terms-checkbox">
+                        <input type="checkbox" id="agreeTerms">
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#" class="terms-link">Terms of Service</a> and understand this is a permanent digital purchase.
+                    </label>
+                </div>
+            </div>
+            
+            <div class="purchase-actions">
+                <button class="btn-secondary" id="cancelPurchase">
+                    <i class="fas fa-times"></i> Cancel
+                </button>
+                <button class="btn-primary" id="confirmPurchase" disabled>
+                    <i class="fas fa-lock"></i> Purchase Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rank Details Modal -->
+    <div class="rank-details-modal" id="rankDetailsModal">
+        <div class="rank-details-content">
+            <button class="close-rank-details">&times;</button>
+            <div class="rank-details-header" id="detailsHeader">
+                <div class="details-rank-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <h2 id="detailsRankName">Rank Details</h2>
+                <div class="details-rank-price" id="detailsRankPrice">$0.00</div>
+            </div>
+            
+            <div class="rank-details-body">
+                <div id="rankDetailsContent">
+                    <!-- Content will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Discord Redirect Modal -->
+    <div class="discord-modal" id="discordModal">
+        <div class="discord-modal-content">
+            <div class="discord-modal-icon">
+                <i class="fab fa-discord"></i>
+                <div class="discord-modal-glow"></div>
+            </div>
+            
+            <h2>Redirecting to Discord</h2>
+            <p>You are being redirected to the Dark Knight SMP Discord server...</p>
+            
+            <div class="discord-modal-timer">
+                <div class="timer-circle">
+                    <div class="timer-fill"></div>
+                    <span class="timer-text" id="timerCount">3</span>
+                </div>
+                <p>Redirecting in <span id="countdown">3</span> seconds</p>
+            </div>
+            
+            <div class="discord-modal-actions">
+                <button class="btn-secondary" id="cancelRedirect">
+                    <i class="fas fa-times"></i> Cancel
+                </button>
+                <button class="btn-primary" id="goNow">
+                    <i class="fas fa-external-link-alt"></i> Go Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification System -->
+    <div class="notification-container" id="notificationContainer"></div>
+    
+    <!-- Particles Container -->
+    <div class="particles-container" id="particles"></div>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
