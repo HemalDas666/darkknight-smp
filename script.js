@@ -118,7 +118,7 @@ function initModal() {
 // COPY SERVER IP - FIXED VERSION
 // ====================
 window.copyIP = async function() {
-    const ip = 'darkknightsmp.qzz.io';
+    const ip = 'darkknightsmp.playserver.pro';
     
     try {
         // Modern clipboard API
